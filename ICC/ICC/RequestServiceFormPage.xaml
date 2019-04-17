@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ICC.RequestServiceFormPage">
+
+    <ScrollView>
+        <StackLayout>
+            <StackLayout.Resources>
+                <ResourceDictionary>
+                    <Style TargetType="Label">
+                        <Setter Property="FontSize" Value="Medium" />
+                        <Setter Property="VerticalOptions" Value="Center" />
+                    </Style>
+                    <Style TargetType="Entry">
+                        <Setter Property="WidthRequest" Value="180" />
+                    </Style>
+                </ResourceDictionary>
+            </StackLayout.Resources>
+
+            <Label Text="Your Information"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <Entry x:Name="EntryFName"
+                    Placeholder="First Name"
+                    Keyboard="Text" />
+            <Entry x:Name="EntryLName"
+                    Placeholder="Last Name"
+                    Keyboard="Text" />
+            <Entry x:Name="EntryEmail"
+                    Placeholder="Email address"
+                    Keyboard="Email" />
+            <Entry x:Name="EntryPhone"
+                    Placeholder="Phone number (optional)"
+                    Keyboard="Telephone" />
+
+            <Label Text="Service will be provided at your location"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <Entry x:Name="EntryAddress1"
+                    Placeholder="Address 1"
+                    Keyboard="Text" />
+            <Entry x:Name="EntryAddress2"
+                    Placeholder="Address 2 (optional)"
+                    Keyboard="Text" />
+            <Entry x:Name="EntryCity"
+                    Placeholder="City"
+                    Keyboard="Text" />
+            <Entry x:Name="EntryState"
+                    Placeholder="State"
+                    Keyboard="Text" />
+            <Entry x:Name="EntryZip"
+                    Placeholder="Postal/Zip"
+                    Keyboard="Numeric" />
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
