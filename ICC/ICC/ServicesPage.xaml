@@ -37,6 +37,11 @@
                 HorizontalOptions="Center"
                     FontSize="Large"
                 Clicked="Business_Retreats" />
+            <Button Text="Test Button"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                    FontSize="Large"
+                Clicked="OnClickTest" />
             
             
         </StackLayout>

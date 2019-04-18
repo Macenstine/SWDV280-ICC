@@ -46,5 +46,16 @@ namespace ICC
         {
 
         }
+
+        void btn_Clicked(object sender, EventArgs e)
+        {
+            this.Navigation.PushAsync(new RequestServiceFormPage());
+        }
+
+        void OnClickTest(object sender, EventArgs e)
+        {
+            this.Navigation.PushModalAsync(new RequestServiceFormPage());
+        }
     }
 }
+
