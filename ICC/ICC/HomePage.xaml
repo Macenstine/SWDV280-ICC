@@ -11,6 +11,7 @@
             VerticalOptions="Center"
             BackgroundColor="#062a38">
                 <!--comment for commit-->
+                <!--another!-->
                 <Label Text="Special messages here"
                    FontSize="Medium"
                    TextColor="White"
