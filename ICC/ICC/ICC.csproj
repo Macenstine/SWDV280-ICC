@@ -10,7 +10,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="IdahoCongiergeLogo.png" />
+    <None Remove="Images\ICCLogo.png" />
     <None Remove="Images\rs=w_360,h_180,cg_true,m.jfif" />
+    <None Remove="Images\tears.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="IdahoCongiergeLogo.png" />
+    <EmbeddedResource Include="Images\ICCLogo.png" />
+    <Content Include="Images\tears.jpg" />
   </ItemGroup>
 
   <ItemGroup>

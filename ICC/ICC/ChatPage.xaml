@@ -9,6 +9,12 @@
                    FontSize="Large"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+           <!-- <Entry Placeholder="Chat"
+                   Keyboard="Chat"
+                   Completed="OnEntryCompleted" 
+                   />-->
+
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -5,7 +5,6 @@
              Title="Services">
     <ContentPage.Content>
         <StackLayout>
-            
 
             <Button Text="Relocation Services"
                 VerticalOptions="CenterAndExpand"

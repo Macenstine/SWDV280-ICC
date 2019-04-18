@@ -1,20 +1,57 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ICC"
              x:Class="ICC.HomePage"
              Title="Home">
-             
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to ICC"
-                   FontSize="Large"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-            <Label Text="Idaho Concierge Company is Idaho's first and only lifestyle management as well concierge service"
+        <StackLayout
+            BackgroundColor="Azure">
+            <StackLayout
+            VerticalOptions="Center"
+            BackgroundColor="#062a38">
+                <Label Text="Special messages here"
                    FontSize="Medium"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-            
+                   TextColor="White"
+                   HorizontalTextAlignment="Center"
+                   HorizontalOptions="Fill"/>
+            </StackLayout>
+            <StackLayout
+                BackgroundColor="White">
+                <Image Source="{local:ImageResource ICC.Images.ICCLogo.png}"/>
+
+                <Label Text="(208)860-3074"
+                   FontSize="Large"
+                   VerticalOptions="Start" 
+                   HorizontalOptions="FillAndExpand"
+                   HorizontalTextAlignment="Center"/>
+            </StackLayout>
+            <Frame CornerRadius="200"  
+                   HeightRequest="400"
+                   WidthRequest="400"
+                   OutlineColor="#062a38"
+                   BackgroundColor="#062a38"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="Start"
+                   Margin="0"
+                   Padding="0">
+                <StackLayout
+                    Margin="50"
+                    BackgroundColor="#062a38">
+                    <Label Text="Welcome to ICC"
+                        TextColor="White"
+                        FontSize="Large"
+                        VerticalOptions="EndAndExpand" 
+                        HorizontalOptions="CenterAndExpand" />
+                    <Label Text="Idaho Concierge Company is Idaho's first and only lifestyle management as well concierge service"
+                        TextColor="White"
+                        FontSize="Medium"
+                           HorizontalTextAlignment="Center"
+                        VerticalOptions="CenterAndExpand" 
+                        HorizontalOptions="CenterAndExpand" />
+
+                </StackLayout>
+            </Frame>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
