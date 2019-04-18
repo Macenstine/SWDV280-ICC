@@ -16,5 +16,10 @@ namespace ICC
         {
             InitializeComponent();
         }
+
+        void OnClickSubmit(object sender, EventArgs e)
+        {
+            this.Navigation.PushModalAsync(new ServiceConfirmationPage());
+        }
     }
 }

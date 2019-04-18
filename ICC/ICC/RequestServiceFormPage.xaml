@@ -53,6 +53,13 @@
             <Entry x:Name="EntryZip"
                     Placeholder="Postal/Zip"
                     Keyboard="Numeric" />
+
+            <Button Text="Submit Button"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                    FontSize="Large"
+                Clicked="OnClickSubmit" />
+            
         </StackLayout>
     </ScrollView>
 
