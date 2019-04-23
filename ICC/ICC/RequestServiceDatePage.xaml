@@ -1,20 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ICC.ServiceConfirmationPage">
+             x:Class="ICC.RequestServiceDatePage">
     <ContentPage.Content>
         <StackLayout>
-            
-            <Label Text="Your request has been submitted!"
+            <Label Text="When do you want to schedule this service?"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            <DatePicker x:Name="serviceDatePicker"
+                 MinimumDate="04/23/2019"
+                 MaximumDate="04/23/2020" />
+            <TimePicker x:Name="serviceTimePicker" />
 
-            <Button Text="Continue"
+            <Button Text="Select"
                 VerticalOptions="CenterAndExpand"
                 HorizontalOptions="Center"
                     FontSize="Large"
-                Clicked="OnClickHome" />
-
+                Clicked="OnClickSelect" />
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

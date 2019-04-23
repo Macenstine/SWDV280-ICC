@@ -31,12 +31,12 @@ namespace ICC
             message += EntryPhone.Text + "\n";
             message += EntryAddress1.Text + "\n";
             message += EntryAddress2.Text + "\n";
-            message += EntryCity.Text + ", " + EntryState.Text + " " + EntryZip;
+            message += EntryCity.Text + ", " + EntryState.Text + " " + EntryZip.Text;
 
 
             await SendEmail("Test", message, address);
             
-            //this.Navigation.PushModalAsync(new ServiceConfirmationPage());
+            this.Navigation.PushModalAsync(new ServiceConfirmationPage());
         }
         
         public async Task SendEmail(string subject, string body, List<string> recipients)
