@@ -16,5 +16,10 @@ namespace ICC
 		{
 			InitializeComponent ();
 		}
-	}
+
+        void OnClickHome(object sender, EventArgs e)
+        {
+            this.Navigation.PushModalAsync(new MainPage());
+        }
+    }
 }
