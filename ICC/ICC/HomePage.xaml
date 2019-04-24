@@ -5,55 +5,65 @@
              x:Class="ICC.HomePage"
              Title="Home">
     <ContentPage.Content>
-        <StackLayout
-            BackgroundColor="Azure">
-            <StackLayout
-            VerticalOptions="Center"
-            BackgroundColor="#062a38">
-                <!--comment for commit-->
-                <!--another!-->
-                <Label Text="Special messages here"
+
+        <Grid ColumnSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="2*" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <!--Small section on top of page for special promotions. Background color matches circle on page-->
+            <Label Text="Special messages here"
+                   Grid.Row="0"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="3"
                    FontSize="Medium"
                    TextColor="White"
-                   HorizontalTextAlignment="Center"
-                   HorizontalOptions="Fill"/>
-            </StackLayout>
-            <StackLayout
-                BackgroundColor="White">
-                <Image Source="{local:ImageResource ICC.Images.ICCLogo.png}"/>
-
-                <Label Text="(208)860-3074"
-                   FontSize="Large"
-                   VerticalOptions="Start" 
+                   BackgroundColor="#29383F"
                    HorizontalOptions="FillAndExpand"
                    HorizontalTextAlignment="Center"/>
-            </StackLayout>
-            <Frame CornerRadius="200"  
-                   HeightRequest="400"
-                   WidthRequest="400"
-                   OutlineColor="#062a38"
-                   BackgroundColor="#062a38"
-                   HorizontalOptions="CenterAndExpand"
-                   VerticalOptions="Start"
-                   Margin="0"
-                   Padding="0">
-                <StackLayout
-                    Margin="50"
-                    BackgroundColor="#062a38">
-                    <Label Text="Welcome to ICC"
-                        TextColor="White"
-                        FontSize="Large"
-                        VerticalOptions="EndAndExpand" 
-                        HorizontalOptions="CenterAndExpand" />
-                    <Label Text="Idaho Concierge Company is Idaho's first and only lifestyle management as well concierge service"
-                        TextColor="White"
-                        FontSize="Medium"
-                           HorizontalTextAlignment="Center"
-                        VerticalOptions="CenterAndExpand" 
-                        HorizontalOptions="CenterAndExpand" />
-
-                </StackLayout>
-            </Frame>
-        </StackLayout>
+            <!--ICC logo at top of page-->
+            <Image Source="{local:ImageResource ICC.Images.icclogo.png}"
+                   Grid.Row="1" 
+                   Grid.Column="0" 
+                   Grid.ColumnSpan="3"
+                   HorizontalOptions="Center" />
+            <!--Company's contact phone number-->
+            <Label Text="(208)860-3074" 
+                   Grid.Row="2"
+                   Grid.Column="1"
+                   FontSize="Small"
+                   HorizontalTextAlignment="Center"/>
+            <!--background image-->
+            <Image Source="{local:ImageResource ICC.Images.iccbackground.jpg}"
+                   Grid.Row="3" 
+                   Grid.Column="0"         
+                   Grid.ColumnSpan="3"
+                   Aspect="AspectFill"
+                   HorizontalOptions="Center"/>
+            <!--circle over the top of background image-->
+            <Image Source="{local:ImageResource ICC.Images.iccbackgroundcircle.png}"
+                   Opacity=".8"
+                   Grid.Row="3" 
+                   Grid.Column="0"
+                   Grid.ColumnSpan="3"
+                   Aspect="AspectFill"
+                   HorizontalOptions="CenterAndExpand"/>
+            <!--text inside the circle-->
+            <Label Text="Welcome to ICC"                  
+                   Grid.Row="3"
+                   Grid.Column="1"  
+                   FontSize="Large"
+                   TextColor="White"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"/>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>
