@@ -11,7 +11,7 @@
                 <RowDefinition Height="50" />
                 <RowDefinition Height="*" />
                 <RowDefinition Height="50" />
-                <RowDefinition Height="2*" />
+                <RowDefinition Height="3*" />
             </Grid.RowDefinitions>
 
             <Grid.ColumnDefinitions>
@@ -54,7 +54,6 @@
                    Grid.Row="3" 
                    Grid.Column="0"
                    Grid.ColumnSpan="3"
-                   Aspect="AspectFill"
                    HorizontalOptions="CenterAndExpand"/>
             <!--text inside the circle-->
             <Label Text="Welcome to ICC"                  
