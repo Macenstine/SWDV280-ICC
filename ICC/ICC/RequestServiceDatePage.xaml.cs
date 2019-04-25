@@ -17,12 +17,11 @@ namespace ICC
 			InitializeComponent ();
 		}
 
-        // Initialize.
-        //OnDateSelected(null, null);
-
         void OnClickSelect(object sender, EventArgs e)
         {
             this.Navigation.PushModalAsync(new RequestServiceFormPage());
         }
+
+
     }
 }
