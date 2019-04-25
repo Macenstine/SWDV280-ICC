@@ -4,7 +4,7 @@
              x:Class="ICC.RequestServiceFormPage">
 
     <ScrollView>
-        <StackLayout>
+        <StackLayout Padding="50,50,50,50">
             <StackLayout.Resources>
                 <ResourceDictionary>
                     <Style TargetType="Label">

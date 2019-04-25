@@ -21,9 +21,6 @@ namespace ICC
             passService = service;
 		}
 
-        // Initialize.
-        //OnDateSelected(null, null);
-
         void OnClickSelect(object sender, EventArgs e)
         {
             //could have done the next three lines in one, but it's probably clearer this way
@@ -34,5 +31,7 @@ namespace ICC
             passDate = passDate.Add(passTime);
             this.Navigation.PushModalAsync(new RequestServiceFormPage(passService, passDate));
         }
+
+
     }
 }
