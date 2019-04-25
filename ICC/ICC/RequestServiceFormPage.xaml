@@ -53,6 +53,10 @@
             <Entry x:Name="EntryZip"
                     Placeholder="Postal/Zip"
                     Keyboard="Numeric" />
+            <Editor x:Name="AdditionalComment"
+                    AutoSize="TextChanges"
+                   Text="Please enter any additional info."
+                   Keyboard="Text" />
 
             <Button Text="Submit Button"
                 VerticalOptions="CenterAndExpand"
