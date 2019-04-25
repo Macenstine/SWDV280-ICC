@@ -34,6 +34,9 @@ namespace ICC
             address.Add("calebmacqueen@mycwi.cc");
             //address.Add("2089215438@vtext.com");
 
+
+            //build the message body from the form entries
+            //Phone and Address2 are optional, so only add if they are not null
             bool isValid = true;
             string fName = EntryFName.Text;
             string lName = EntryLName.Text;
@@ -108,13 +111,17 @@ namespace ICC
             if (isValid)
             {
                 //build the message body from the form entries
+
             string message = "";
             message += "New " + requestService + " Request from: \n";
             message += EntryFName.Text + " " + EntryLName.Text + "\n";
             message += EntryEmail.Text + "\n";
-            message += EntryPhone.Text + "\n";
+            if (EntryPhone.Text != null)
+            {
+                message += EntryPhone.Text + "\n";
+            }
             message += EntryAddress1.Text + "\n";
-            if (EntryAddress2.Text != "" && EntryAddress2.Text != "Address 2 (optional)")
+            if (EntryAddress2.Text != null)
             {
                 message += EntryAddress2.Text + "\n";
             }
