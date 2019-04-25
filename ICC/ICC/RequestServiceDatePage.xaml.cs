@@ -17,7 +17,7 @@ namespace ICC
 		public RequestServiceDatePage (string service)
 		{
 			InitializeComponent ();
-            TestLabel.Text += service;
+            promptLabel.Text += service + "?";
             passService = service;
 		}
 
