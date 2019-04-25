@@ -12,9 +12,13 @@ namespace ICC
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class RequestServiceDatePage : ContentPage
 	{
-		public RequestServiceDatePage ()
+        string passService;
+
+		public RequestServiceDatePage (string service)
 		{
 			InitializeComponent ();
+            TestLabel.Text += service;
+            passService = service;
 		}
 
         // Initialize.
@@ -22,7 +26,13 @@ namespace ICC
 
         void OnClickSelect(object sender, EventArgs e)
         {
-            this.Navigation.PushModalAsync(new RequestServiceFormPage());
+            //could have done the next three lines in one, but it's probably clearer this way
+            //pull the date selected and the time selected
+            DateTime passDate = serviceDatePicker.Date;
+            TimeSpan passTime = serviceTimePicker.Time;
+            //and then add the time to the date
+            passDate = passDate.Add(passTime);
+            this.Navigation.PushModalAsync(new RequestServiceFormPage(passService, passDate));
         }
     }
 }
