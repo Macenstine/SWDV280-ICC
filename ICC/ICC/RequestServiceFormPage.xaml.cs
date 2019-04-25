@@ -15,13 +15,21 @@ namespace ICC
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class RequestServiceFormPage : ContentPage
     {
-        public RequestServiceFormPage()
+        //a few fields we'll need from the previous page.
+        string requestService;
+        DateTime requestDate;
+
+        public RequestServiceFormPage(string service, DateTime date)
         {
             InitializeComponent();
+            //store arguments from previous page
+            requestService = service;
+            requestDate = date;
         }
 
         async void OnClickSubmit(object sender, EventArgs e)
         {
+            //add the email address and text address to send the email to
             List<string> address = new List<string>();
             address.Add("calebmacqueen@mycwi.cc");
             //address.Add("2089215438@vtext.com");
@@ -36,6 +44,7 @@ namespace ICC
             string city = EntryCity.Text;
             string state = EntryState.Text;
             string zip = EntryZip.Text;
+
 
             if(fName == null || fName == "")
             {
@@ -98,14 +107,20 @@ namespace ICC
 
             if (isValid)
             {
-                string message = "";
-                message += "Request from: \n";
-                message += fName + " " + EntryLName.Text + "\n";
-                message += EntryEmail.Text + "\n";
-                message += EntryPhone.Text + "\n";
-                message += EntryAddress1.Text + "\n";
+                //build the message body from the form entries
+            string message = "";
+            message += "New " + requestService + " Request from: \n";
+            message += EntryFName.Text + " " + EntryLName.Text + "\n";
+            message += EntryEmail.Text + "\n";
+            message += EntryPhone.Text + "\n";
+            message += EntryAddress1.Text + "\n";
+            if (EntryAddress2.Text != "" && EntryAddress2.Text != "Address 2 (optional)")
+            {
                 message += EntryAddress2.Text + "\n";
-                message += EntryCity.Text + ", " + EntryState.Text + " " + EntryZip.Text;
+            }
+            message += EntryCity.Text + ", " + EntryState.Text + " " + EntryZip.Text + "\n";
+            //requestDate and Time were sent from the previous page to this page's constructor
+            message += "on " + requestDate;
 
 
                 await SendEmail("Test", message, address);

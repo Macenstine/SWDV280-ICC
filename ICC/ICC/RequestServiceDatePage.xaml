@@ -4,6 +4,10 @@
              x:Class="ICC.RequestServiceDatePage">
     <ContentPage.Content>
         <StackLayout>
+            <Label x:Name="TestLabel"
+                Text="This page was called from "
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />   
             <Label Text="When do you want to schedule this service?"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />

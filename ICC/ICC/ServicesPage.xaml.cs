@@ -49,12 +49,12 @@ namespace ICC
 
         void btn_Clicked(object sender, EventArgs e)
         {
-            this.Navigation.PushAsync(new RequestServiceFormPage());
+            //this.Navigation.PushAsync(new RequestServiceFormPage());
         }
 
         void OnClickTest(object sender, EventArgs e)
         {
-            this.Navigation.PushModalAsync(new RequestServiceDatePage());
+            this.Navigation.PushModalAsync(new RequestServiceDatePage("Test Button"));
         }
     }
 }
