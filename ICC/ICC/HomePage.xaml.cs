@@ -14,7 +14,6 @@ namespace ICC
     {
         public HomePage()
         {
-            if (Device.RuntimePlatform == Device.iOS) Padding = new Thickness(0, 30, 0, 0);
             InitializeComponent();
         }
     }
