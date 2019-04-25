@@ -68,13 +68,13 @@ namespace ICC
                 EntryEmail.PlaceholderColor = Red;
                 EntryEmail.Text = "";
             }
-            /*if(phone == null || phone == "")
+            if(phone == null || phone == "")
             {
                 isValid = false;
                 EntryPhone.Placeholder = EntryPhone.Placeholder + " *";
                 EntryPhone.PlaceholderColor = Red;
-            }*/
-            if (phone == null || phone == "" || IsValidPhone(phone))
+            }
+            else if (phone == null || phone == "" || IsValidPhone(phone))
             {
                 //do nothing, isValid should already be true
             }
