@@ -11,19 +11,19 @@
 
   <ItemGroup>
     <None Remove="IdahoCongiergeLogo.png" />
+    <None Remove="Images\iccbackgroundback.jpg" />
+    <None Remove="Images\iccbackgroundcircle.png" />
     <None Remove="Images\ICCLogo.png" />
-    <None Remove="Images\rs=w_360,h_180,cg_true,m.jfif" />
-    <None Remove="Images\tears.jpg" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="IdahoCongiergeLogo.png" />
-    <EmbeddedResource Include="Images\ICCLogo.png" />
-    <Content Include="Images\tears.jpg" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Images\rs=w_360,h_180,cg_true,m.jfif" />
+    <EmbeddedResource Include="Images\iccbackgroundback.jpg" />
+    <EmbeddedResource Include="Images\iccbackgroundcircle.png" />
+    <EmbeddedResource Include="Images\ICCLogo.png" />
   </ItemGroup>
 
   <ItemGroup>
