@@ -42,7 +42,7 @@
                    FontSize="Small"
                    HorizontalTextAlignment="Center"/>
             <!--background image-->
-            <Image Source="{local:ImageResource ICC.Images.iccbackgroundback.jpg}"
+            <Image Source="{local:ImageResource ICC.Images.iccbackground.jpg}"
                    Grid.Row="3" 
                    Grid.Column="0"         
                    Grid.ColumnSpan="3"
