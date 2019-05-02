@@ -58,7 +58,7 @@
                    Text="Please enter any additional info."
                    Keyboard="Text" />
 
-            <Button Text="Submit Button"
+            <Button Text="Submit"
                 VerticalOptions="CenterAndExpand"
                 HorizontalOptions="Center"
                     FontSize="Large"

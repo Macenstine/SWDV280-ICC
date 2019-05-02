@@ -7,5 +7,5 @@
     <local:ServicesPage/>
     <local:EventsPage/>
     <local:ChatPage/>
-    <local:ServiceConfirmationPage/>
+    <local:OmnifiquePage/>
 </TabbedPage>
