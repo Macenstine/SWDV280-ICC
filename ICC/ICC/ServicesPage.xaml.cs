@@ -56,11 +56,6 @@ namespace ICC
         {
             this.Navigation.PushModalAsync(new RequestServiceDatePage(service));
         }
-
-        void OnClickTest(object sender, EventArgs e)
-        {
-            this.Navigation.PushModalAsync(new RequestServiceDatePage("Test Button"));
-        }
     }
 }
 

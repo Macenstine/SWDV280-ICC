@@ -6,43 +6,39 @@
     <ContentPage.Content>
         <StackLayout>
 
-            <Button Text="Relocation Services"
-                VerticalOptions="CenterAndExpand"
-                HorizontalOptions="Center"
-                    FontSize="Large"
-                Clicked="Relocation_Services" />
-            <Button Text="Corporate Events"
-                VerticalOptions="CenterAndExpand"
-                HorizontalOptions="Center"
-                    FontSize="Large"
-                Clicked="Corporate_Events" />
             <Button Text="Errand Running"
                 VerticalOptions="CenterAndExpand"
                 HorizontalOptions="Center"
                     FontSize="Large"
                 Clicked="Errand_Running" />
-            <Button Text="Temporary Assisants"
+            <Button Text="Events"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                    FontSize="Large"
+                Clicked="Corporate_Events" />
+            <Button Text="Temporary Assistants"
                 VerticalOptions="CenterAndExpand"
                 HorizontalOptions="Center"
                     FontSize="Large"
                 Clicked="Temporary_Assisants" />
-            <Button Text="Accommodations"
-                VerticalOptions="CenterAndExpand"
-                HorizontalOptions="Center"
-                    FontSize="Large"
-                Clicked="AccommodationsBTN" />
             <Button Text="Business Retreats"
                 VerticalOptions="CenterAndExpand"
                 HorizontalOptions="Center"
                     FontSize="Large"
                 Clicked="Business_Retreats" />
-            <Button Text="Test Button"
+            <Button Text="Accommodations"
                 VerticalOptions="CenterAndExpand"
                 HorizontalOptions="Center"
                     FontSize="Large"
-                Clicked="OnClickTest" />
-            
-            
+                Clicked="AccommodationsBTN" />
+            <Button Text="Relocation Services"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                    FontSize="Large"
+                Clicked="Relocation_Services" />
+
+
+
         </StackLayout>
 
        
